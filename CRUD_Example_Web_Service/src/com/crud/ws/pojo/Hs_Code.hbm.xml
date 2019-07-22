@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 29, 2019 8:16:34 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.crud.ws.pojo.Hs_Code" table="HS_CODE">
+        
+        <composite-id>
+    		<key-property name="hsFirm" column="HSFIRM" />
+    		<key-property name="hsCust" column="HSCUST" />
+    		<key-property name="hsPart" column="HSPART" />
+    		<key-property name="hsMura" column="HSMURA" />
+    		<key-property name="hsAmur" column="HSAMUR" />
+    		<key-property name="hsPptc" column="HSPPTC" />
+    		<key-property name="hsH40c" column="HSH40C" />
+    		<key-property name="hsCode" column="HSCODE" />
+    	</composite-id>
+        
+        <property name="hsDuty" type="int">
+            <column name="HSDUTY" />
+        </property>
+        <property name="hsEProdName" type="java.lang.String">
+            <column name="HSEPRODNAME" />
+        </property>
+        <property name="hsLProdName" type="java.lang.String">
+            <column name="HSLPRODNAME" />
+        </property>
+        <property name="hsCusJudge" type="java.lang.String">
+            <column name="HSCUSJUDGE" />
+        </property>
+        <property name="hsCrtUsr" type="java.lang.String">
+            <column name="HSCRTUSR" />
+        </property>
+        <property name="hsCrtDate" type="int">
+            <column name="HSCRTDATE" />
+        </property>
+        <property name="hsCrtTime" type="int">
+            <column name="HSCRTTIME" />
+        </property>
+        <property name="hsUpdUsr" type="java.lang.String">
+            <column name="HSUPDUSR" />
+        </property>
+        <property name="hsUpdDate" type="int">
+            <column name="HSUPDDATE" />
+        </property>
+        <property name="hsUpdTime" type="int">
+            <column name="HSUPDTIME" />
+        </property>
+    </class>
+</hibernate-mapping>
